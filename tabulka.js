@@ -10,7 +10,7 @@ async function loadData(search = '') {
 
     let query = db.from('pojmy').select('*').order('created_at', { ascending: false });
     if (search) {
-        query = query.or(`pojem.ilike.%${search}%,kategorie.ilike.%${search}%,vysvetleni.ilike.%${search}%,autor.ilike.%${search}%`);
+        query = query.or(`pojem.ilike.%${search}%,kategorie.ilike.%${search}%,vysvetleni.ilike.%${search}%,poznamka.ilike.%${search}%,autor.ilike.%${search}%`);
     }
 
     const { data, error } = await query;
