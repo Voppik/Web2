@@ -246,6 +246,23 @@ tr.selected td {
     border-color: var(--accent);
 }
 
+.login-section {
+
+    button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: var(--success);
+        color: var(--text-primary);
+        border-radius: 15px;
+        width: 89%;
+        margin: 80px;
+        padding: 50px;
+        border: none;
+        font-size: xx-large;
+    }
+}
+
 /* --- MOBIL --- */
 .hamburger-btn {
     display: none;

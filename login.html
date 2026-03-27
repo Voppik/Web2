@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/745426684c.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="login.js"></script>
 </head>
 <body>
 <button id="hamburger" class="hamburger-btn"><i class="fa-solid fa-bars"></i></button>
@@ -26,11 +28,21 @@
     <h1>Vyber typ přihlášení</h1>
     <p>Máš na výběr ze dvou možností, ani jedna nemá žádnou výhodu.</p>
 </header>
+        <div id="auth-section">
+            <h2>Přihlášení / Registrace</h2>
+            <input type="email" id="email" placeholder="Váš e-mail" required>
+            <input type="password" id="password" placeholder="Vaše heslo" required>
+            <br><br>
+            <button id="login-btn">Přihlásit se</button>
+            <button id="signup-btn">Zaregistrovat se</button>
+            <p id="auth-message" style="color: red;"></p>
+        </div>
 
-<section class="login-section">
-    <button onclick="loginGitHub()">Přihlásit přes GitHub</button>
-    <button onclick="loginGoogle()">Přihlásit přes Google</button>
-</section>
+        <div id="user-section" style="display: none;">
+            <h2>Vítejte!</h2>
+            <p>Jste přihlášeni jako: <strong id="user-email-display"></strong></p>
+            <button id="logout-btn">Odhlásit se</button>
+        </div>
     </main>
 </div>
 </body>
