@@ -180,7 +180,6 @@ section h3 {
     background: var(--bg-sidebar);
     border-radius: 12px;
     border: 1px solid var(--border);
-    overflow: hidden;
 }
 
 table {
