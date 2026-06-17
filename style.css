@@ -295,4 +295,8 @@ tr.selected td {
         padding: 20px;
         padding-top: 70px;
     }
+
+    header {
+        display: block;
+    }
 }
